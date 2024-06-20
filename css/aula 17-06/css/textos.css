@@ -1,0 +1,67 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #aaecde6c;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: justify;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: double;
+    letter-spacing: 10px;
+    line-height: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+/*
+    - Unidades absolutas (px, cm, pt, etc);
+    - Unidades relativas 
+        vh  -> viewport height (altura tela)
+        vw -> viewport width (largura tela)
+        em 
+        rem 
+        %
+*/
+
+.secao2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f;
+
+}
+
+.quadrado1 {
+    width: 70vw;
+    height: 20vh;
+    background-color: #f00;
+    margin: 10px;
+}
+
+.quadrado2 {
+    width: 60vw;
+    height: 20vh;
+    background-color: #0f0;
+    margin: 10px;
+}
+
+.quadrado3 {
+    width: 70vw;
+    height: 20vh;
+    margin: 10px;
+    background-color: #00f;
+}
+
+.quadrado4 {
+    height: 200px;
+    width: 300px;
+    background-color: rgb(216, 247, 79);
+    margin: 10px;
+}

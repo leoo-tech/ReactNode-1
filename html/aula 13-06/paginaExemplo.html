@@ -1,0 +1,189 @@
+<!-- Semântica -> Dar mais significado aos elementos da página 
+ - section => seção de conteúdo / capítulos / informação de contato
+ - header => conteudo introdutorio / cabeçalho inicial da página / autoria
+ - nav => navegação de links
+ - footer => rodapé / copyright/ contato / mapa do site/ voltar para o topo
+ - aside => conteúdo adicional
+ - article => conteudo que não depende do que está fora
+ - main => conteúdo principal da página / não repetir
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site para exemplificar as semanticas">
+    <meta name="keywords" content="html, css, semanticas">
+    <meta name="author" content="Lucas">
+    <title>semanticas</title>
+</head>
+
+<style>
+    /* estilizando o header */
+    header {
+        background-color: #2e2e2e;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    /* estilizando o nav */
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* estilizando o main */
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    /* estilizando o section */
+    section {
+        width: 60%;
+        background-color: #f2f2f2;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: justify;
+    }
+
+    /* estilizando o article */
+    article {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 10px;
+
+    }
+
+    /* estilizando o aside */
+    aside {
+        width: 30%;
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+
+    /* estilizando o footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* pensando na responsividade para celulares */
+    @media (max-width: 768px) {
+        main {
+            flex-direction: column;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        aside {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">sobre</a></li>
+                <li><a href="#">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- section com o conteudo principal -->
+        <section>
+            <h2>seção 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut libero suscipit illo repellat, dignissimos,
+                nisi illum modi sunt excepturi doloremque natus labore alias amet, non tempore. Voluptas consequuntur
+                quae earum facilis officiis, ipsum culpa laboriosam aperiam explicabo rem corrupti ipsa a minus
+                dignissimos ipsam vero accusamus minima praesentium pariatur illum architecto nobis mollitia quaerat!
+                Esse aliquid maxime vero consequatur repellat quod ut! Dolore sed quia reprehenderit illum ab! Tenetur
+                perspiciatis, officiis ea soluta eos accusantium atque saepe alias ipsa vero sunt placeat libero nam
+                voluptatum. Laborum quos veniam, exercitationem quisquam cum voluptates optio deserunt porro saepe
+                reiciendis dicta soluta. Eius.</p>
+        </section>
+
+        <section>
+            <h2>sobre aquele caso lá...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quasi. Dolores quam neque accusamus
+                deleniti commodi nobis, iure numquam corporis hic, doloremque consequatur tempore labore explicabo modi
+                ipsum natus minus quod error veniam. Provident deserunt dolorem, blanditiis reprehenderit minima fugit
+                dolor libero nisi cupiditate deleniti dignissimos, nobis ab natus laboriosam quae tempora quod et esse
+                magni doloribus pariatur perspiciatis numquam praesentium. Distinctio tenetur repudiandae enim
+                reiciendis animi quod voluptas totam corrupti eligendi, consequatur debitis libero alias dicta culpa
+                reprehenderit quia placeat mollitia veritatis sed, eum recusandae ad itaque quos nobis. Consequatur
+                molestiae distinctio fuga! Illo mollitia nihil quidem incidunt reprehenderit?</p>
+        </section>
+
+        <!-- section com articles aninhados -->
+        <section>
+            <h2>profissionais que trabalhei</h2>
+
+            <article>
+                <h3>almir</h3>
+                <p><strong>desenvolvedor</strong></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quasi? Quae</p>
+            </article>
+
+            <article>
+                <h3>joão</h3>
+                <p><strong>designer</strong></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quasi? Quae</p>
+            </article>
+
+            <article>
+                <h3>maria</h3>
+                <p><strong>gerente</strong></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quasi? Quae</p>
+            </article>
+        </section>
+
+        <!-- redes sociais -->
+        <aside>
+            <h2>minhas redes</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">linkedin</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+    </main>
+
+    <!-- footer dando os creditos ao provedor e patrocinador -->
+    <footer>
+        <hr>
+        <p>site desenvolvido por lucas</p>
+        <p>patrocinado por &copy; 2024, google</p>
+    </footer>
+
+</body>
+
+</html>

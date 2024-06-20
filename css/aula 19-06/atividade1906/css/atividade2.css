@@ -1,0 +1,103 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+.intro,
+.gallery {
+    margin-bottom: 2rem;
+}
+
+.images {
+    display: flex;
+    gap: 1rem;
+}
+
+.image {
+    background-color: #ccc;
+    padding: 2rem;
+    flex: 1;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/* Estilos básicos já definidos acima */
+
+/* Smartphones (menos de 600px) */
+@media (max-width: 599px) {
+    nav ul li {
+        display: block;
+        /* Faz cada item da navegação aparecer em sua própria linha */
+        margin: 0.5rem 0;
+        /* Reduz o espaço entre os itens da navegação */
+    }
+
+    .images {
+        flex-direction: column;
+        /* Exibe as imagens em uma única coluna */
+    }
+}
+
+/* Tablets (600px a 900px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    .images {
+        flex-wrap: wrap;
+        /* Permite que as imagens se ajustem conforme o espaço disponível */
+    }
+
+    .image {
+        flex: 1 1 45%;
+        /* Ajusta as imagens para que duas caibam em uma linha, com um pouco de espaço entre elas */
+    }
+}
+
+/* Desktops (mais de 900px) - Estilos padrão já são adequados, mas ajustes específicos podem ser adicionados se necessário */
+@media (min-width: 900px) {
+    .image {
+        flex: 1 1 30%;
+        /* Ajusta as imagens para exibir três ou mais em uma linha, dependendo do espaço disponível */
+    }
+}

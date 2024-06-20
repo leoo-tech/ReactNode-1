@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+/* praticando flexbox */
+
+.container {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* distribuição no eixo principal */
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    /* ajusta elementos quando usamos o wrap. mesmos valores que o justify-content */
+    align-content: center;
+    gap: 8px;
+}
+
+.item-1 {
+    background-color: goldenrod;
+}
+
+.item-2 {
+    background-color: #df5e4f;
+}
+
+.item-3 {
+    background-color: #7c32cc;
+}
+
+.item-4 {
+    background-color: #2ecc71;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+    width: 200px;
+    margin: 8px;
+    padding: 8px;
+}
+
+/* between - entre os objetos / around - ao redor dos objetos / evenly - uniformemente entre os elementos */

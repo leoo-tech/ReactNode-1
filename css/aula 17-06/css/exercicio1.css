@@ -1,0 +1,60 @@
+:root{
+    /* Definição de variáveis */
+    --cor-primaria: #333;
+    --cor-secundaria: #f0f0f0;
+    --cor-terciaria: #ddd;
+    font-size: 62.5%;
+}
+
+/* Estilização por ID */
+#titulo-principal {
+    font-family: 'Arial', sans-serif;
+    /* Fonte */
+    font-size: 3.5em;
+    /* Tamanho da fonte */
+    color: #333;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinhamento do texto */
+    margin-bottom: 20px;
+    /* Margem inferior */
+}
+
+/* Estilização por Classe */
+.texto-introducao {
+    font-family: 'Georgia', serif;
+    font-size: 1.7em;
+    line-height: 1.6;
+    /* Espaçamento entre linhas */
+    text-indent: 2em;
+    /* Indentação do parágrafo */
+}
+
+.caixa {
+    /* Cor de fundo */
+    background-color: #f0f0f0;
+    /* Espaçamento interno */
+    padding: 15px;
+    /* Borda */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /* margem */
+    margin-bottom: 20px;
+}
+
+/* Estilização por Elemento */
+p {
+    margin-bottom: 10px;
+    /* Margem inferior para todos os parágrafos */
+    font-size: 1.7em;
+}
+
+figure {
+    text-align: center;
+    /* Centraliza a imagem e a legenda */
+}
+
+figcaption {
+    font-style: italic;
+    /* Estilo itálico para a legenda */
+}

@@ -1,0 +1,38 @@
+/* aula css - 17 06 */
+
+/* !important => ignora a prioridade padrão */
+
+/* seletor de elemento = todos os elementos da pagina recebem o estilo */
+
+p {
+    color: red;
+}
+
+
+/* seletor de classes = elementos com atributo class recebem o estilo */
+
+.primeiro {
+    background-color: antiquewhite;
+}
+
+.destaque {
+    font-size: 20px;
+    color: blue;
+    text-align: justify;
+}
+
+#paragrafo {
+    color: black;
+}
+
+
+/* seletor de id = elementos com atributo id recebem o estilo */
+
+#titulo {
+    color: green;
+    text-align: center;
+}
+
+body {
+    background-color: hsla(89, 43%, 51%, 0.3);
+}

@@ -1,0 +1,220 @@
+/* index */
+
+/* geral - pode copiar a base para outros estilos de outras paginas */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Faz com que o corpo da página ocupe toda a largura */
+    width: 100%;
+    /* Faz com que o corpo da página ocupe toda a altura */
+    height: 100%;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilização da barra de navegação */
+nav {
+    background-color: #f8f9fa;
+    /* Um cinza claro para o fundo, pode ser ajustado ou removido */
+    padding: 10px 20px;
+    /* Ajuste conforme necessário */
+}
+
+nav ul {
+    display: flex;
+    /* Alinha os itens da lista horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens da lista */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+nav li {
+    margin: 0 15px;
+    /* Espaçamento entre os itens */
+}
+
+nav a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #007bff;
+    /* Cor azul para os links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+}
+
+nav a:hover {
+    color: #0056b3;
+    /* Cor mais escura ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+main {
+    max-width: 960px;
+    /* Largura máxima para centralizar o conteúdo */
+    margin: 0 auto;
+    /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno para respiro */
+}
+
+/* card apresentação */
+
+#apresentacao {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    padding: 50px;
+    /* Adiciona espaçamento interno */
+}
+
+#apresentacao img {
+    width: 200px;
+    /* Define a largura da imagem */
+    border-radius: 50%;
+    /* Faz a imagem ficar redonda */
+}
+
+#apresentacao h1 {
+    font-size: 3em;
+    /* Define o tamanho da fonte do título */
+    margin-bottom: 10px;
+    /* Adiciona espaço abaixo do título */
+}
+
+#apresentacao a{
+    color: #007bff;
+    /* Cor azul para os links */
+    text-decoration: none;
+    /* Remove o sublinhado */
+}
+
+/* Estilização da seção de projetos - index */
+#projetos {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.material-symbols-outlined {
+    font-size: 48px;
+    color: #333;
+}
+
+#projetos h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.projeto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projeto li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.projeto h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+.projeto a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+/* Reset básico para ul e li */
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* seção contatos */
+
+#contato {
+    background-color: #f0f0f0;
+    /* Fundo cinza claro */
+    padding: 20px;
+    /* Espaçamento interno */
+    margin: 20px 0;
+    /* Espaçamento externo */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+}
+
+#contato h2 {
+    color: #333;
+    /* Cor escura para o texto */
+    margin-bottom: 15px;
+    /* Espaçamento abaixo do título */
+}
+
+#contato p {
+    color: #666;
+    /* Cor mais clara para o parágrafo */
+    margin-bottom: 20px;
+    /* Espaçamento antes do botão */
+}
+
+#contato button {
+    background-color: #007bff;
+    /* Fundo azul */
+    color: white;
+    /* Texto branco */
+    border: none;
+    /* Sem borda */
+    padding: 10px 20px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor de mão */
+    text-align: center;
+    /* Texto centralizado */
+    display: inline-block;
+    /* Permite o uso de margin e outros espaçamentos */
+}
+
+#contato button a {
+    color: white;
+    /* Texto branco */
+    text-decoration: none;
+    /* Sem sublinhado */
+    display: block;
+    /* Faz o link preencher todo o botão */
+}
+
+#contato button:hover {
+    background-color: #0056b3;
+    /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilização do rodapé - index */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}

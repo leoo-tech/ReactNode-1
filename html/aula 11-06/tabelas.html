@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+</head>
+
+<body>
+    <!-- tabelas
+        <table> - elemento de tabela
+        <tr> - table row - linha da tabela
+        <td> - table data - celula da tabela 
+        <th> cabeçalho table head
+        <thead> cabeçalho da tabela
+        <tfoot> - rodape da tabela 
+    -->
+    <table border="3" style="border-collapse: collapse;">
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>endereço</th>
+            <th>telefone</th>
+        </tr>
+        <tr>
+            <td>joanna</td>
+            <td>20</td>
+            <td>los angeles - ca</td>
+            <td>1234-5678</td>
+        </tr>
+        <tr>
+            <td>frank</td>
+            <td>27</td>
+            <td>san diego - ca</td>
+            <td>1234-5678</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <table border="4" style="border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th colspan="4">lista de funcionários</th>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Pagamento realizado: </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Joanna</td>
+                <td>joanna@email.com</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>carlos</td>
+                <td>carlos@email.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>lianna</td>
+                <td>lianna@email.com</td>
+                <td rowspan="2">não</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>victoria</td>
+                <td>victoria@email.com</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">obs: os funcionários recebem no último dia útil </td>
+            </tr>
+
+    </table>
+
+    <hr>
+    <br>
+
+    <table border="4" style="border-collapse: collapse;">
+        <tr>
+            <th>nome</th>
+            <th>disciplina</th>
+            <th>nota</th>
+            <th>média</th>
+        </tr>
+        <tr>
+            <td rowspan="3">joe</td>
+            <td>matemática</td>
+            <td>8.5</td>
+            <td rowspan="3">8.3</td>
+        </tr>
+        <tr>
+            <td>português</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>computação</td>
+            <td>9.0</td>
+    </table>
+    <hr>
+    <br>
+    <table border="3" style="border-collapse: collapse;">
+
+        <tr>
+            <th>zonas</th>
+            <th>time</th>
+            <th>partidas</th>
+            <th>vitorias</th>
+            <th>empates</th>
+            <th>derrotas</th>
+            <th>pontos</th>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Libertadores</td>
+            <td>flamengo</td>
+            <td>5</td>
+            <td>3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>vasco</td>
+            <td>5</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>botafogo</td>
+            <td>5</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>fluminense</td>
+            <td>5</td>
+            <td>0</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Pré-Libertadores</td>
+            <td>corinthians</td>
+            <td>5</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>são paulo</td>
+            <td>5</td>
+            <td>1</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>santos</td>
+            <td>5</td>
+            <td>0</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>palmeiras</td>
+            <td>5</td>
+            <td>0</td>
+            <td>1</td>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

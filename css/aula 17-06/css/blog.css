@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secao {
+    width: 400px;
+    margin: 16px auto;
+    background: rgb(5, 0, 87);
+    background: linear-gradient(90deg, rgba(5, 0, 87, 0.6980042016806722) 24%, rgba(28, 0, 113, 0.5131302521008403) 51%, rgba(0, 212, 255, 0.5943627450980392) 99%);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+/* box shadow - x y desfoque spread cor */
+
+.figura {
+    box-shadow: 10px 10px 5px 0 rgba(61, 61, 61, 0.5);
+}
+
+/* combinador de descendente */
+.secao p {
+    text-shadow: 0.90px 0.90px 1px rgba(92, 92, 92, 0.868);
+    color: white;
+}

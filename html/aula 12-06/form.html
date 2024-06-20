@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+
+<body>
+
+    <!-- 
+    form - conteiner do formulario
+    input, textarea, select - campos de formulario
+    label - rotulo dos campos -->
+
+    <form action="#" method="post">
+        <!-- for vincula o campo e o rotulo -->
+
+        <div>
+            <label for="nome">Nome:</label>  
+            <input type="text" name="nome" id="nome" placeholder="seu nome">
+             
+        </div>
+
+        <div>
+            <label for="email">Email:</label>  
+            <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+        </div>
+
+        <div>
+            <label for="senha">Senha:</label>  
+            <input type="password" name="senha" id="senha" placeholder="001#exemploSenha#002">
+             
+        </div>
+
+        <div>
+            <label for="telefone">telefone:</label>  
+            <input type="tel" name="telefone" id="cTelefone" maxlength="11" placeholder="ddd e os 9 numeros juntos">  
+        </div>
+
+
+        <div>
+            <label for="linkedin">seu linkedin:</label>  
+            <input type="url" name="linkedin" id="cLinkedin" placeholder="linkedin.com/in/seu-nome">  
+        </div>
+
+
+        <div>
+            <label for="idade">idade:</label>  
+            <input type="number" name="idade" id="cIdade" min="18" max="100">  
+        </div>
+
+
+        <div>
+            <label for="cDataNasc">Data de nascimento:</label>  
+            <input type="date" name="dataNasc" id="cDataNasc" min="1900-01-01" max="2024-06-12">  
+        </div>
+
+        <div>
+            <label for="foto">sua foto:</label>  
+            <input type="file" name="foto" id="cFoto" accept=".jpg, .png">  
+        </div>
+
+        <div>
+            <p>Sua linguagem favorita:</p>  
+            <input type="radio" name="linguagem" id="html" required>
+            <label for="html">html</label>
+            <input type="radio" name="linguagem" id="css" required>
+            <label for="css">css</label>
+            <input type="radio" name="linguagem" id="js" required>
+            <label for="js">js</label>  
+        </div>
+
+        <div>
+            <p>Selecione as linguagens que você conhece:</p>  
+            <input type="checkbox" name="linguagens[]" id="html" value="html">
+            <label for="html">html</label>
+            <input type="checkbox" name="linguagens[]" id="css" value="css">
+            <label for="css">css</label>
+            <input type="checkbox" name="linguagens[]" id="js" value="js">
+            <label for="js">js</label>  
+        </div>
+
+
+        <div>
+            <label for="cEscolaridade">escolaridade:</label>  
+            <select name="escolaridade" id="cEscolaridade" required>
+                <option disabled selected value="">selecione uma opção</option>
+                <option value="ensinoMedio">ensino médio</option>
+                <option value="ensinoTecnico">ensino técnico</option>
+                <option value="ensinoSuperior">ensino superior</option>
+                <option value="posGraduacao">pós-graduação</option>
+            </select>
+             
+        </div>
+
+        <div>
+            <label for="descricao">sua mini história:</label>  
+            <textarea name="descricao" id="descricao" minlength="100" wrap="soft" cols="50" rows="10"
+                placeholder="um pouco sobre você... hobbies, estudos, ambições"></textarea>
+             
+        </div>
+
+        
+        <div>
+            <button type="submit">enviar</button>
+            <button type="reset">limpar tudo</button>
+            <button type="button">nada</button>
+            <button disabled="disabled">nada demais</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

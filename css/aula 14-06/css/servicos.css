@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Faz com que o corpo da página ocupe toda a largura */
+    width: 100%;
+    /* Faz com que o corpo da página ocupe toda a altura */
+    height: 100%;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilização da barra de navegação */
+nav {
+    background-color: #f8f9fa;
+    /* Um cinza claro para o fundo, pode ser ajustado ou removido */
+    padding: 10px 20px;
+    /* Ajuste conforme necessário */
+}
+
+nav ul {
+    display: flex;
+    /* Alinha os itens da lista horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens da lista */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+nav li {
+    margin: 0 15px;
+    /* Espaçamento entre os itens */
+}
+
+nav a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #007bff;
+    /* Cor azul para os links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+}
+
+nav a:hover {
+    color: #0056b3;
+    /* Cor mais escura ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Reset básico para ul e li */
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main {
+    max-width: 960px;
+    /* Largura máxima para centralizar o conteúdo */
+    margin: 0 auto;
+    /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno para respiro */
+}
+
+/* Estilos da Seção de Serviços */
+#servicos {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    /* Espaçamento da seção anterior */
+}
+
+#servicos h2 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#servicos dl {
+    text-align: left;
+    /* Alinha o texto da lista à esquerda */
+}
+
+#servicos dt {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+#servicos dd {
+    margin-bottom: 20px;
+    /* Espaço entre as descrições */
+}
+
+/* Estilos da Seção de Preços */
+#precos {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    /* Espaçamento da seção anterior */
+}
+
+#precos h2 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#precos table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Remove espaços entre as células */
+}
+
+#precos th,
+#precos td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    /* Linha cinza clara para separar as linhas */
+}
+
+#precos th {
+    background-color: #f5f5f5;
+    /* Cinza claro para o cabeçalho */
+    font-weight: bold;
+}
+
+
+/* Estilização do rodapé - index */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}

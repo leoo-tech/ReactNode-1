@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ancoras e links</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0;
+        padding: 1em;
+        background-color: #333;
+        color: white;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    form {
+        padding: 1em;
+    }
+
+    label {
+        display: block;
+        margin: 1em 0;
+    }
+
+    input {
+        padding: 0.5em;
+        margin: 0.5em 0;
+    }
+
+    input[type="submit"] {
+        padding: 0.5em 2em;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #f00;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1em;
+        background-color: #333;
+        color: white;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        margin: 0 1em;
+    }
+
+    footer a:hover {
+        color: #f00;
+    }
+</style>
+
+<body>
+    <!-- pagina de cadastro do usuario -->
+
+    <h2>cadastro</h2>
+    <hr>
+    <form action="cadastro.php" method="post">
+        <label for="nome">nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="senha">senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        <input type="submit" value="cadastrar">
+    </form>
+
+    <footer>
+        <a href="index.html">pagina inicial</a>
+        <a href="contato.html">contato</a>
+        <a href="privacidade.html">politicas de privacidade</a>
+    </footer>
+</body>
+
+</html>

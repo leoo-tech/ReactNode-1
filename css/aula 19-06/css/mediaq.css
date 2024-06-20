@@ -1,0 +1,43 @@
+/* Media Query = regra especial */
+/* 
+    @media condicao {
+        // estilos a serem aplicados quando a condição for verdadeira
+    }
+*/
+
+
+/* Navbar Responsiva */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-bar img {
+        width: 156px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-card {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .section-card img {
+        width: 100%;
+    }
+
+    .section-card p {
+        padding: 16px;
+        text-align: center;
+    }
+}

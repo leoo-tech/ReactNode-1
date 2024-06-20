@@ -1,0 +1,77 @@
+/* Reset/Normalização de Estilos */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* Inclui padding e border na largura/altura total do elemento */
+}
+
+/* Reset de Margens e Preenchimentos */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Listas */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Links */
+a {
+    text-decoration-skip-ink: auto;
+    /* Melhora a aparência de links em telas de alta resolução */
+}
+
+/* Figuras e Imagens */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+}
+
+/* Formulários */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    /* Herda a fonte do elemento pai */
+}
+
+/* Estilos Gerais */
+body {
+    line-height: 1.5;
+    /* Espaçamento entre linhas */
+    -webkit-font-smoothing: antialiased;
+    /* Melhora a renderização de fontes em alguns navegadores */
+}
+
+/* Remova estilos padrão de listas */
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+/* Remova estilos de links */
+a {
+    color: inherit;
+    text-decoration: none;
+}

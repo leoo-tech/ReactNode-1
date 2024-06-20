@@ -1,0 +1,152 @@
+/* pagina projetos */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Faz com que o corpo da página ocupe toda a largura */
+    width: 100%;
+    /* Faz com que o corpo da página ocupe toda a altura */
+    height: 100%;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilização da barra de navegação */
+nav {
+    background-color: #f8f9fa;
+    /* Um cinza claro para o fundo, pode ser ajustado ou removido */
+    padding: 10px 20px;
+    /* Ajuste conforme necessário */
+}
+
+nav ul {
+    display: flex;
+    /* Alinha os itens da lista horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens da lista */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+}
+
+nav li {
+    margin: 0 15px;
+    /* Espaçamento entre os itens */
+}
+
+nav a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #007bff;
+    /* Cor azul para os links */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+}
+
+nav a:hover {
+    color: #0056b3;
+    /* Cor mais escura ao passar o mouse */
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Reset básico para ul e li */
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main {
+    max-width: 960px;
+    /* Largura máxima para centralizar o conteúdo */
+    margin: 0 auto;
+    /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno para respiro */
+}
+
+/* Estilos da Seção de Projetos */
+#projetos {
+    background-color: #fff;
+    /* Fundo branco para destacar os projetos */
+    padding: 40px;
+    border-radius: 8px;
+    /* Cantos arredondados para um visual suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para profundidade */
+}
+
+#projetos h2 {
+    color: #222;
+    /* Cinza escuro para o título da seção */
+    margin-bottom: 20px;
+}
+
+.material-symbols-outlined {
+    /* Ícone da seção */
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #555;
+    /* Cinza médio para o ícone */
+}
+
+/* Estilos dos Projetos Individuais */
+.projeto {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* Borda cinza clara para separar os projetos */
+    border-radius: 5px;
+}
+
+.projeto h3 {
+    color: #222;
+    /* Cinza escuro para o título do projeto */
+    margin-bottom: 10px;
+}
+
+.projeto img {
+    width: 50%;
+    max-width: 100%;
+    /* Garante que as imagens não ultrapassem o container */
+    height: auto;
+    /* Ajusta a altura das imagens */
+    display: block;
+    /* Remove espaço extra abaixo das imagens */
+    margin: 0 auto 20px;
+    /* Centraliza as imagens */
+    border-radius: 5px;
+    /* Cantos arredondados para um visual suave */
+}
+
+.projeto p {
+    text-align: justify;
+    /* Justifica o texto dos parágrafos */
+    margin-bottom: 10px;
+}
+
+.projeto a {
+    color: #007bff;
+    /* Azul para os links (personalize!) */
+    text-decoration: none;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização do rodapé - index */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
